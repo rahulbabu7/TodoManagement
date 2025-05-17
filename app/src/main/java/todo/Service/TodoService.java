@@ -102,8 +102,9 @@
 package todo.Service;
 
 import todo.Entity.Todo;
+import todo.Repository.FileTodoRepository;
 import todo.Repository.TodoRepository;
-import todo.Repository.InMemoryTodoRepository;
+// import todo.Repository.InMemoryTodoRepository;
 
 import java.util.List;
 
@@ -111,7 +112,8 @@ public class TodoService {
     private TodoRepository todoRepository;
 
     public TodoService() {
-        this.todoRepository = new InMemoryTodoRepository();
+        // this.todoRepository = new InMemoryTodoRepository(); this was for inmemory
+        this.todoRepository = new FileTodoRepository();
     }
 
     public void addTodo(Todo todo) {

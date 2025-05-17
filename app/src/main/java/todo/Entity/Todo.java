@@ -1,6 +1,9 @@
 package todo.Entity;
+import java.io.Serializable;
 
-public class Todo {
+// public class Todo {   for normal without file 
+public class Todo implements Serializable { //for file
+
     private static int count=0;
     private int id;
     private String title;
