@@ -4,6 +4,19 @@ import todo.Entity.Todo;
 import java.util.ArrayList;
 import java.util.List;
 
+
+
+/*
+ * 
+ * 
+ * Purpose:
+
+    Acts as a storage layer — where your todos live.
+
+    Handles CRUD operations (Create, Read, Update, Delete).
+
+    Keeps the data in-memory (in a list) for now.
+ */
 public class InMemoryTodoRepository implements TodoRepository {
     private List<Todo> todos = new ArrayList<>();
 
