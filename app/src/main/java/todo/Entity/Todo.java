@@ -47,6 +47,15 @@ public class Todo {
         count = countnew;
     }
 
+    public void setCompleted(boolean completed) {
+    this.is_completed = completed;
+}
+
+public boolean isCompleted() {
+    return this.is_completed;
+}
+
+
   @Override
     public String toString() {
         // return this.id +"-" +this.title +"(Titi)" "\n" + this.description +" \n Status "+ (this.is_completed ? " (Done)" : " (Pending)");
